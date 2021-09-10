@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Simple tables</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='index.css') }}">
+
+<div class=page>
+  <h1>My tables</h1>
+
+  {% for index in range(tables | length) %}
+    <h2>{{titles[index]}}</h2>
+
+    {{ tables[index]|safe }}
+  {% endfor %}
+</div>

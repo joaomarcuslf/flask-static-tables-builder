@@ -1,0 +1,13 @@
+<!doctype html>
+<title>Tables</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='index.css') }}">
+
+<div class=page>
+  <h1>My Links</h1>
+
+  {% for index in range(paths | length) %}
+    <a href="{{ paths[index]}}">
+      {{ paths[index]}}
+    </a>
+  {% endfor %}
+</div>
