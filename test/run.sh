@@ -1,0 +1,1 @@
+find . -name '*.py' | python app.py -h 0.0.0.0

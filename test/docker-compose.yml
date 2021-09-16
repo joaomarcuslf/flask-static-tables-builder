@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  api:
+    build: .
+    command: sh run.sh
+    volumes:
+      - ./:/usr/src/app
+    ports:
+      - 5000:5000
+    environment:
+      PORT: 5000
